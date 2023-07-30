@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Haute Florals</title>
+    <link rel="shortcut icon" href="../media/Logo/pngaaa.com-204641.png" type="image/x-icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/login.css">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <!-- Symbol -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- Fonts -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Calistoga&family=Julius+Sans+One&family=Lobster&family=Lobster+Two&family=Oswald:wght@300&family=Pacifico&family=Paytone+One&family=Playfair+Display+SC&family=Poiret+One&family=Raleway:wght@200&family=Rubik+Mono+One&family=Sigmar+One&display=swap');
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="header__logo">
+            <a href="../index.html"><img src="/media/Logo/Haute-Florals---Crest-and-Wordmark---multicolor.png" alt="">
+            </a>
+            <nav class="header__nav">
+                <div class="header__nav--option">
+                    <ul>
+                        <li>
+                            <a class="option__home option__hover" href="../index.html">
+                                Home
+                            </a>
+                        </li>
+                        <li class="dropdown option__products option__hover">
+                            <a href="../HTML/products.html">
+                                Products
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="../HTML/products.html">Occasions</a>
+                                <a href="../HTML/products.htm">Brand Opening Flower</a>
+                                <a href="../HTML/products.htm">Money Boutique & Gifts</a>
+                                <a href="../HTML/products.htm">Funeral Wreath</a>
+                            </div>
+                        </li>
+                        <li class="dropdown option__hover">
+                            <a class="dropbutton" href="../HTML/service.html">
+                                Service
+                            </a>
+                            <div class="dropdown-content">
+                                <a href="../HTML/service.html">Service Events Florist</a>
+                                <a href="../HTML/service.html">Styling Services</a>
+                                <a href="../HTML/service.html">Plant</a>
+                            </div>
+                        </li>
+                        <li class="option__hover">
+                            <a href="../HTML/Floriography.html">
+                                Floriography
+                            </a>
+                        </li>
+                        <li class="option__hover">
+                            <a href="../HTML/Contact.html">
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__nav--login-signup">
+                    <ul>
+                        <li>
+                            <a href="../HTML/login.html">
+                                Login & Sign up
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <span class="material-symbols-outlined header__cart">
+            shopping_cart
+        </span>
+    </header>
+    <!--  End Header  -->
+    <main>
+        <div class=" form__login--signup">
+            <div class="login__img">
+                <img src="../media/Logo/15890391-vintage-form-for-the-design-of-blanks-and-certificates.webp" alt="">
+                <div class="form__login">
+                    <form action="">
+                        <h1>Sign In</h1>
+                        <div class="form__info">
+                            <div class="form__detail">
+                                <label for="username">Username:</label> <br>
+                                <input type="text" id="username">
+                            </div>
+                            <div class="form__detail">
+                                <label for="password">Password:</label> <br>
+                                <input type="password" id="password">
+                            </div>
+                            <button class="header__nav--login-signup login__btn" onclick="getLogin(event)">Log
+                                In</button>
+                        </div>
+
+                        <div class="form__signup ">
+                            <p>Don't have an account?
+                                <a href="./signup.html">
+                                    Sign Up
+                                </a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="/JS/login.js"></script>
+</body>
+
+</html>

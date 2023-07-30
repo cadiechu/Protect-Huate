@@ -1,0 +1,90 @@
+body {
+    background-color: #E6D8CF;
+}
+
+.form__login--signup {
+    margin: auto;
+    font-family: 'Lobster Two', cursive;
+}
+
+.login__img {
+    width: 400px;
+    height: 600px;
+    position: relative;
+    border-radius: 20px;
+    margin: auto;
+    position: relative;
+}
+
+.login__img img {
+    width: 100%;
+    height: 100%;
+}
+
+.form__login {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FFFFFF;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding-top: 113px;
+}
+
+form {
+    color: #68655f;
+}
+
+form label {
+    font-family: 'Borel', cursive;
+}
+
+.form__info {
+    margin-top: 10px;
+}
+
+.form__info input {
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    border-bottom: solid 0.5px #68655f;
+    text-align: center;
+    color: #371ACC;
+    font-family: 'Raleway', sans-serif;
+
+}
+
+.login__btn {
+    margin-top: 30px;
+    color: #68655f;
+    border: solid 1px #68655f;
+    background-color: #E6D8CF;
+    width: 100px;
+    height: 30px;
+    border-radius: 3px;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.login__btn:hover {
+    color: #fff;
+    border: solid 1px #fff;
+
+}
+
+.form__signup {
+    margin-top: 45px;
+    font-family: 'Borel', cursive;
+}
+
+.form__signup a {
+    text-decoration: none;
+    color: #A57F9A;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.form__signup a:hover {
+    color: #fff;
+    border-bottom: #fff 1px solid;
+}

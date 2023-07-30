@@ -8,11 +8,12 @@
     <link rel="shortcut icon" href="./media/Logo/pngaaa.com-204641.png" type="image/x-icon">
     <link rel="stylesheet" href="./CSS/index.css">
     <!-- Symbol -->
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <!-- Fonts -->
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Calistoga&family=Julius+Sans+One&family=Lobster&family=Lobster+Two&family=Oswald:wght@300&family=Pacifico&family=Paytone+One&family=Playfair+Display+SC&family=Poiret+One&family=Raleway:wght@200&family=Rubik+Mono+One&family=Sigmar+One&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Borel&family=Calistoga&family=Julius+Sans+One&family=Lobster&family=Lobster+Two&family=Nunito:wght@200&family=Oswald:wght@300&family=Pacifico&family=Paytone+One&family=Playfair+Display+SC&family=Poiret+One&family=Raleway:wght@200&family=Rubik+Mono+One&family=Sigmar+One&display=swap');
     </style>
 </head>
 
@@ -20,43 +21,43 @@
     <!-- Header -->
     <header class="header">
         <div class="header__logo">
-            <img src="/media/Logo/Haute-Florals---Crest-and-Wordmark---multicolor.png" alt="">
+            <a href="./index.html"><img src="/media/Logo/Haute-Florals---Crest-and-Wordmark---multicolor.png" alt="">
+            </a>
             <nav class="header__nav">
                 <div class="header__nav--option">
                     <ul>
                         <li>
-                            <a class="option__home option__hover" href="#">
+                            <a class="option__home " href="./index.html">
                                 Home
                             </a>
                         </li>
-                        <li class="dropdown option__products option__hover">
-                            <a href="#">
+                        <li class="dropdown ">
+                            <a href="./HTML/products.html">
                                 Products
                             </a>
                             <div class="dropdown-content">
-                                <a href="#">Occasions</a>
-                                <a href="#">Brand Opening Flower</a>
-                                <a href="#">Money Boutique & Gifts</a>
-                                <a href="#">Funeral Wreath</a>
+                                <a href="./HTML/products.html">Occasions</a>
+                                <a href="./HTML/products.htm">Brand Opening Flower</a>
+                                <a href="./HTML/products.htm">Money Boutique & Gifts</a>
+                                <a href="./HTML/products.htm">Funeral Wreath</a>
                             </div>
                         </li>
-                        <li class="dropdown option__hover">
-                            <a class="dropbutton" href="#">
+                        <li class="dropdown ">
+                            <a class="dropbutton" href="./HTML/service.html">
                                 Service
                             </a>
                             <div class="dropdown-content">
-                                <a href="#">Service Events Florist</a>
-                                <a href="#">Styling Services</a>
-                                <a href="#">Plant</a>
+                                <a href="./HTML/service.html">Service Events Florist</a>
+                                <a href="./HTML/service.html">Styling Services</a>
+                                <a href="./HTML/service.html">Plant</a>
                             </div>
                         </li>
-                        <li class="option__hover">
-                            <a href="#">
+                        <li>
+                            <a href="./HTML/Floriography.html">
                                 Floriography
                             </a>
                         </li>
-                        <li class="option__hover">
-                            <a href="#">
+                        <li> <a href="./HTML/Contact.html">
                                 Contact
                             </a>
                         </li>
@@ -65,9 +66,14 @@
                 <div class="header__nav--login-signup">
                     <ul>
                         <li>
-                            <a href="#">
-                                Login & Sign in
+                            <a class="before_login" href="./HTML/login.html">
+                                Login & Sign up
                             </a>
+                            <div class="after_login" style="display: none" onclick="clickUser">
+                                <div onclick="logOut()" class="after_login">
+                                    logout
+                                </div>
+                            </div>
                         </li>
                     </ul>
                 </div>
@@ -193,9 +199,43 @@
         </div>
     </main>
     <footer>
-
+        <p class="footer__text">CONTACT</p>
+        <h3>Haute Florals</h3>
+        <hr>
+        <div class="footer__container">
+            <div class="footer__left">
+                <p>Opening Hours :</p>
+                <ul>
+                    <li><i class='fa fa-clock-o'></i>
+                        Monday to Frday : 9:00-21:00 </li>
+                    <li><i class='fa fa-clock-o'></i>
+                        Saturday and Sunday : 8:00-12:00</li>
+                </ul>
+            </div>
+            <nav>
+                <i class='fa fa-facebook-square'></i>
+                <i class='fa fa-instagram'></i>
+                <i class='fa fa-skype'></i>
+                <i class='fa fa-google'></i>
+                <p class="footer__text">Nguyen Thi Minh Chau</p>
+            </nav>
+            <div class="footer__right">
+                <p>Address :</p>
+                <ul>
+                    <li>
+                        HCM : 12AB Thanh Đa, phường 27, quận Bình Thạnh
+                        <i class='fa fa-home'></i>
+                    </li>
+                    <li>
+                        HN : 458 Minh Khai, Vĩnh Tuy, Hai Bà Trưng, Hà Nội
+                        <i class='fa fa-home'></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
     <script src="./JS/banner.JS"></script>
+    <script src="./JS/index.js"></script>
 </body>
 
 </html>
