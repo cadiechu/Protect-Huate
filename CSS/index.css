@@ -65,22 +65,26 @@
     color: #FDFBFC;
 }
 
-.header__nav--login-signup a {
-    color: #FFFFFF;
+.after_login:hover {
+    background-image: linear-gradient(#000000, #ff93de);
+    color: #FDFBFC;
     font-family: 'Playfair Display SC', serif;
 }
 
 .after_login {
-    background-image: linear-gradient(#000000, #ff93de);
-    color: #FDFBFC;
+    font-family: 'Playfair Display SC', serif;
+}
+
+.header__nav--login-signup a {
+    color: #FFFFFF;
     font-family: 'Playfair Display SC', serif;
 }
 
 .header__cart {
     background-color: #DCB7CF;
     color: #FDFBFC;
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
     text-align: center;
     border-radius: 17px;
     padding: 7px;
@@ -298,7 +302,7 @@ h2 {
 
 .service__hover {
     transition: .5s ease;
-    opacity: 0;
+    opacity: 1;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

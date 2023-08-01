@@ -19,7 +19,7 @@ let imageInterval = function banner() {
     document.getElementById("listimg").src = listBanners[count];
     if (count == 11) {
         count = 0;
-    } console.log(count);
+    }
 }
 setInterval(() => {
     imageInterval();

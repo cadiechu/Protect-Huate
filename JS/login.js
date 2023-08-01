@@ -8,11 +8,10 @@ function getLogin(e) {
             console.log("Đăng nhập thành công");
             localStorage.setItem("checkLogin", users[i].idUser)
             window.location.href = "../index.html";
-            return; console.log(users[i].idUser);
+            return; 
 
         }
     }
-    console.log(users[i].idUser);
-
     console.log("Tài khoản không tồn tại hoặc sai mật khẩu!");
+    localStorage.setItem("isLogin",true)
 }
