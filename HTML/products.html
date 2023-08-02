@@ -31,32 +31,26 @@
                 <div class="header__nav--option">
                     <ul>
                         <li>
-                            <a class="option__home option__hover" href="../index.html">
+                            <a class="option__home " href="../index.html">
                                 Home
                             </a>
                         </li>
-                        <li class=" option__products option__hover">
+                        <li>
                             <a href="../HTML/products.html">
                                 Products
                             </a>
                         </li>
-                        <li class="dropdown option__hover">
-                            <a class="dropbutton" href="../HTML/service.html">
+                        <li class="dropdown ">
+                            <a href="../HTML/service.html">
                                 Service
                             </a>
-                            <div class="dropdown-content">
-                                <a href="../HTML/service.html">Service Events Florist</a>
-                                <a href="../HTML/service.html">Styling Services</a>
-                                <a href="../HTML/service.html">Plant</a>
-                            </div>
                         </li>
-                        <li class="option__hover">
+                        <li>
                             <a href="../HTML/Floriography.html">
                                 Floriography
                             </a>
                         </li>
-                        <li class="option__hover">
-                            <a href="../HTML/Contact.html">
+                        <li> <a href="../HTML/contact.html">
                                 Contact
                             </a>
                         </li>
@@ -65,18 +59,28 @@
                 <div class="header__nav--login-signup">
                     <ul>
                         <li>
-                            <a href="../HTML/login.html">
+                            <a class="before_login" href="../HTML/login.html">
                                 Login & Sign up
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <span class="material-symbols-outlined header__cart">
-            shopping_cart
-        </span>
+                            <div onclick="logOut()" class="after_login" ">
+                                                logout
+                                            </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+                    <div class=" cart_possition">
+                                <a href=" ./cart.html">
+                                    <span style=" font-size: 50px;" class="material-symbols-outlined header__cart">
+                                        <div class=" circle"></div>
+                                        shopping_cart
+                                    </span>
+                                </a>
+                            </div>
+
     </header>
+    <!--  End Header  -->
     <main>
         <div class="products_search">
             <input class="input" type="search" placeholder="Enter Something" id="searchSomething">
@@ -122,7 +126,7 @@
                         </div>
                         <div class="product__item--price">
                         10000000
-                        <span class="material-symbols-outlined">
+                        <span onclick="addToCart()" class="material-symbols-outlined addproduct">
                             shopping_cart
                         </span>
                         </div>
@@ -193,8 +197,8 @@
             </div>
         </div>
     </footer>
-    <!-- <script src="../JS/productsitem.js"></script> -->
     <script src="../JS/products.js"></script>
+    <script src="../JS/index.js"></script>
 
 </body>
 

@@ -29,33 +29,26 @@
                 <div class="header__nav--option">
                     <ul>
                         <li>
-                            <a class="option__home option__hover" href="../index.html">
+                            <a class="option__home " href="../index.html">
                                 Home
                             </a>
                         </li>
-                        <li class=" option__products option__hover">
+                        <li>
                             <a href="../HTML/products.html">
                                 Products
                             </a>
-
                         </li>
-                        <li class="dropdown option__hover">
-                            <a class="dropbutton" href="../HTML/service.html">
+                        <li class="dropdown ">
+                            <a href="../HTML/service.html">
                                 Service
                             </a>
-                            <div class="dropdown-content">
-                                <a href="../HTML/service.html">Service Events Florist</a>
-                                <a href="../HTML/service.html">Styling Services</a>
-                                <a href="../HTML/service.html">Plant</a>
-                            </div>
                         </li>
-                        <li class="option__hover">
+                        <li>
                             <a href="../HTML/Floriography.html">
                                 Floriography
                             </a>
                         </li>
-                        <li class="option__hover">
-                            <a href="../HTML/Contact.html">
+                        <li> <a href="./HTML/Contact.html">
                                 Contact
                             </a>
                         </li>
@@ -64,89 +57,92 @@
                 <div class="header__nav--login-signup">
                     <ul>
                         <li>
-                            <a href="../HTML/login.html">
+                            <a class="before_login" href="../HTML/login.html">
                                 Login & Sign up
                             </a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
-        <span style="font-size: 50px;" class="material-symbols-outlined header__cart">
-            shopping_cart
-        </span>
-    </header>
+                            <div onclick="logOut()" class="after_login" ">
+                                        logout
+                                    </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+               </header>
     <!--  End Header  -->
     <main>
         <div class=" form__login--signup">
-            <div class="login__img">
-                <img src="../media/Logo/15890391-vintage-form-for-the-design-of-blanks-and-certificates.webp" alt="">
-                <div class="form__login">
-                    <form action="">
-                        <h1>Sign In</h1>
-                        <div class="form__info">
-                            <div class="form__detail">
-                                <label for="username">Username:</label> <br>
-                                <input type="text" id="username">
-                            </div>
-                            <div class="form__detail">
-                                <label for="password">Password:</label> <br>
-                                <input type="password" id="password">
-                            </div>
-                            <button class="header__nav--login-signup login__btn" onclick="getLogin(event)">Log
-                                In</button>
-                        </div>
+                                <div class="login__img">
+                                    <img src="../media/Logo/15890391-vintage-form-for-the-design-of-blanks-and-certificates.webp"
+                                        alt="">
+                                    <div class="form__login">
+                                        <form action="">
+                                            <h1>Sign In</h1>
+                                            <div class="form__info">
+                                                <div class="form__detail">
+                                                    <label for="username">Username:</label> <br>
+                                                    <input type="text" id="username">
+                                                </div>
+                                                <div class="form__detail">
+                                                    <label for="password">Password:</label> <br>
+                                                    <input type="password" id="password">
+                                                </div>
+                                                <button class="header__nav--login-signup login__btn"
+                                                    onclick="getLogin(event)">Log
+                                                    In</button>
+                                            </div>
 
-                        <div class="form__signup ">
-                            <p>Don't have an account?
-                                <a href="./signup.html">
-                                    Sign Up
-                                </a>
-                            </p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
+                                            <div class="form__signup ">
+                                                <p>Don't have an account?
+                                                    <a href="./signup.html">
+                                                        Sign Up
+                                                    </a>
+                                                </p>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
 
-    </main>
-    <footer style="margin-top: 300px;">
-        <p class="footer__text">CONTACT</p>
-        <h3>Haute Florals</h3>
-        <hr>
-        <div class="footer__container">
-            <div class="footer__left">
-                <p>Opening Hours :</p>
-                <ul>
-                    <li><i class='fa fa-clock-o'></i>
-                        Monday to Frday : 9:00-21:00 </li>
-                    <li><i class='fa fa-clock-o'></i>
-                        Saturday and Sunday : 8:00-12:00</li>
-                </ul>
-            </div>
-            <nav>
-                <i class='fa fa-facebook-square'></i>
-                <i class='fa fa-instagram'></i>
-                <i class='fa fa-skype'></i>
-                <i class='fa fa-google'></i>
-                <p class="footer__text">Nguyen Thi Minh Chau</p>
-            </nav>
-            <div class="footer__right">
-                <p>Address :</p>
-                <ul>
-                    <li>
-                        HCM : 12AB Thanh Đa, phường 27, quận Bình Thạnh
-                        <i class='fa fa-home'></i>
-                    </li>
-                    <li>
-                        HN : 458 Minh Khai, Vĩnh Tuy, Hai Bà Trưng, Hà Nội
-                        <i class='fa fa-home'></i>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <script src="/JS/login.js"></script>
+                            </main>
+                            <footer style="margin-top: 300px;">
+                                <p class="footer__text">CONTACT</p>
+                                <h3>Haute Florals</h3>
+                                <hr>
+                                <div class="footer__container">
+                                    <div class="footer__left">
+                                        <p>Opening Hours :</p>
+                                        <ul>
+                                            <li><i class='fa fa-clock-o'></i>
+                                                Monday to Frday : 9:00-21:00 </li>
+                                            <li><i class='fa fa-clock-o'></i>
+                                                Saturday and Sunday : 8:00-12:00</li>
+                                        </ul>
+                                    </div>
+                                    <nav>
+                                        <i class='fa fa-facebook-square'></i>
+                                        <i class='fa fa-instagram'></i>
+                                        <i class='fa fa-skype'></i>
+                                        <i class='fa fa-google'></i>
+                                        <p class="footer__text">Nguyen Thi Minh Chau</p>
+                                    </nav>
+                                    <div class="footer__right">
+                                        <p>Address :</p>
+                                        <ul>
+                                            <li>
+                                                HCM : 12AB Thanh Đa, phường 27, quận Bình Thạnh
+                                                <i class='fa fa-home'></i>
+                                            </li>
+                                            <li>
+                                                HN : 458 Minh Khai, Vĩnh Tuy, Hai Bà Trưng, Hà Nội
+                                                <i class='fa fa-home'></i>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </footer>
+                            <script src="/JS/login.js"></script>
+                            <script src="../JS/index.js"></script>
 </body>
 
 </html>

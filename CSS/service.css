@@ -36,7 +36,7 @@
     text-align: center;
     color: #FFFFFF;
     position: absolute;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), #FFFFFF);
+    background: linear-gradient(rgba(0, 0, 0, 0.5), #0d0b0b);
     width: 75.5%;
     height: 101%;
     padding: 5%;
@@ -45,8 +45,6 @@
 .hover p {
     font-size: 70px;
     font-family: 'Playfair Display SC', serif;
-    align-items: center;
-    margin-top: 12%;
 }
 
 .hover button {
@@ -114,9 +112,30 @@ h1 {
     margin: auto;
     text-align: center;
     padding: 20px;
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin: 50px;
+    margin-bottom: 50px;
 }
 
-.mediaEvent h3 {
+.mediaEvent-event h3 {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+.mediaEvent-plant h3 {
+    text-align: center;
+    font-family: 'Lobster Two', cursive;
+    font-size: 40px;
+    margin: 50px;
+    margin-bottom: 50px;
+}
+
+.mediaEvent-styling h3 {
     text-align: center;
     font-family: 'Lobster Two', cursive;
     font-size: 40px;
@@ -125,14 +144,14 @@ h1 {
 }
 
 .contact {
-    background-color: #DCB7CF;
     text-align: center;
     font-family: 'Playfair Display SC', serif;
     font-size: 20px;
     border: none;
-    width: 15%;
+    width: 30%;
     margin: 30px auto;
     height: 30px;
+    gap: 10px;
 
 }
 
@@ -140,10 +159,28 @@ h1 {
     color: #7B827A;
     text-decoration: none;
     align-items: baseline;
+    background-color: #DCB7CF;
+    padding: 10px;
+
 }
 
-.contact:hover {
+.contact a:hover {
     color: #FFFFFF;
     text-decoration: none;
     background-color: #92A790;
+}
+
+.button {
+    display: flex;
+    font-size: 20px;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    border: none;
+    background-color: #E4EEEA;
+    margin-bottom: 20px;
+}
+
+.button:hover {
+    color: #DCB7CF;
 }

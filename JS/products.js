@@ -12,12 +12,17 @@ let totalPage = Math.ceil(products.length / perPage);
 let filteredProduct = [];
 
 // filter
-
-
-
+let checkLogin = localStorage.getItem("checkLogin");
 let users = JSON.parse(localStorage.getItem("users")) || [];
 function renderProducts(products) {
     let element = "";
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].idUser == checkLogin) {
+            console.log(users[i].cart.length);
+            document.getElementsByClassName("circle")[0].innerHTML = users[i].cart.length;
+        }
+    }
+
     for (let i = 0; i < products.length; i++) {
         if (i >= start && i < end)
             element +=
@@ -32,7 +37,7 @@ function renderProducts(products) {
                 </div>
                 <div class="product__item--price">
                      ${VND.format(products[i].price)}
-                    <span class="material-symbols-outlined shoppingicon">
+                    <span onclick="addToCart(${i})" class="material-symbols-outlined shoppingicon">
                         shopping_cart
                     </span>
                 </div>
@@ -42,7 +47,6 @@ function renderProducts(products) {
                     <span class="item--detail">
                        ${products[i].detail}
                     </span>
-
                 </div>
             </div>
             </div>
@@ -135,7 +139,6 @@ function increasePage() {
     pageNow(currentPage);
     renderProducts(products);
 }
-
 function decreasePage() {
     currentPage = currentPage - 1;
     if (currentPage < 1) {
@@ -145,9 +148,28 @@ function decreasePage() {
     pageNow(currentPage);
     renderProducts(products);
 }
-
-
-
+// function mua hang
+function addToCart(idProduct) {
+    if (checkLogin == null) {
+        console.log("bạn phải đăng nhập để mua hàng ");
+        return;
+    }
+    for (let i = 0; i < users.length; i++) {
+        if (users[i].idUser == checkLogin) {
+            let index = users[i].cart.findIndex((item) => item.id == products[idProduct].id)
+            console.log(index);
+            if (index != -1) {
+                users[i].cart[index].quantity++
+            } else {
+                users[i].cart.push(products[idProduct]);
+            }
+            localStorage.setItem("users", JSON.stringify(users))
+        }
+    }
+    renderProducts(products);
+}
+console.log(users);
+// show quantity
 
 
 

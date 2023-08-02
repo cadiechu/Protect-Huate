@@ -9,7 +9,6 @@ function getLogin(e) {
             localStorage.setItem("checkLogin", users[i].idUser)
             window.location.href = "../index.html";
             return; 
-
         }
     }
     console.log("Tài khoản không tồn tại hoặc sai mật khẩu!");

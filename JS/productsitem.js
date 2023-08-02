@@ -434,4 +434,4 @@ for (let i = 0; i < products.length; i++) {
     products[i].id = createId();
 }
 console.log(products);
-localStorage.setItem("products", JSON.stringify(products)); 
+// localStorage.setItem("products", JSON.stringify(products)); 

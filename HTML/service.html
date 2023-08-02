@@ -6,8 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Haute Florals</title>
     <link rel="shortcut icon" href="../media/Logo/pngaaa.com-204641.png" type="image/x-icon">
-    <link rel="stylesheet" href="../CSS/index.css">
+    <!-- css -->
     <link rel="stylesheet" href="../CSS/service.css">
+    <link rel="stylesheet" href="../CSS/index.css">
     <!-- Symbol -->
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
     <link rel="stylesheet"
@@ -42,9 +43,9 @@
                                 Service
                             </a>
                             <div class="dropdown-content">
-                                <a href="../HTML/service.html">Service Events Florist</a>
-                                <a href="../HTML/service.html">Styling Services</a>
-                                <a href="../HTML/service.html">Plant</a>
+                                <a href="#e">Service Events Florist</a>
+                                <a href="#s">Styling Services</a>
+                                <a href="#p">Plant</a>
                             </div>
                         </li>
                         <li>
@@ -52,7 +53,7 @@
                                 Floriography
                             </a>
                         </li>
-                        <li> <a href="../HTML/Contact.html">
+                        <li> <a href="../HTML/contact.html">
                                 Contact
                             </a>
                         </li>
@@ -72,145 +73,167 @@
                 </div>
             </nav>
         </div>
-        <span style=" font-size: 50px;" class="material-symbols-outlined header__cart">
-                                shopping_cart
-                                </span>
+       
     </header>
     <!--  End Header  -->
     <main>
-        <h1>Your Full - Service Florist
-        </h1>
-        <p class="service_text">
-            We are here to help you to create your Dream Look from ceremony and reception decoration to the bridal
-            bouquet, special
-            lighting and all your needs.
-        </p>
-        <div class="content">
+        <h1 id=" #e">Your Full - Service Florist
+                                </h1>
+                                <p class="service_text">
+                                    We are here to help you to create your Dream Look from ceremony and reception
+                                    decoration to the bridal
+                                    bouquet, special
+                                    lighting and all your needs.
+                                </p>
+                                <div class="content">
 
-            <div class=" body_content">
-                <div class=" service_banner">
-                    <img src="../media/servicebanner/setupparty.webp" alt="">
-                    <img src="../media/servicebanner/setup.jpg" alt="">
-                    <img src="../media/servicebanner/setup2.jpg" alt="">
-                </div>
-                <div class="hover">
-                    <p>SERVICE EVENTS Decorations</p>
-                    <button>
-                        MORE GALLERY >>
-                    </button>
-                </div>
-            </div>
-            <p class="content_text">Browse photos of wedding flowers including bridal and bridesmaid bouquets,
-                centerpieces, boutonnieres, wedding reception
-                decoration, wedding ceremony decor and more. Search our wedding flower decorartion gallery to find your
-                favorite. ClicK to see more decoration by Flower Corner, your events florist in Bali.</p>
+                                    <div class=" body_content">
+                                        <div class=" service_banner">
+                                            <img src="../media/servicebanner/setupparty.webp" alt="">
+                                            <img src="../media/servicebanner/setup.jpg" alt="">
+                                            <img src="../media/servicebanner/setup2.jpg" alt="">
+                                        </div>
+                                        <div class="hover">
+                                            <p id="e">SERVICE EVENTS Decorations</p>
+                                            <button onclick="getMediaevent(1)">
+                                                MORE GALLERY >>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <p class="content_text">Browse photos of wedding flowers including bridal and
+                                        bridesmaid bouquets,
+                                        centerpieces, boutonnieres, wedding reception
+                                        decoration, wedding ceremony decor and more. Search our wedding flower
+                                        decorartion gallery to find your
+                                        favorite. ClicK to see more decoration by Flower Corner, your events florist in
+                                        Bali.</p>
 
-            <div class="mediaEvent">
-                <h3>GALLERY</h3>
-                <div class="media-event">
-                    <img src="../media/Event/event1.jpg" alt="">
-                    <img src="../media/Event/event2.jpg" alt="">
-                    <img src="../media/styling/q1.jpg" alt="">
-                    <img src="../media/Event/event4.jpg" alt="">
-                    <img src="../media/Event/event7.jpg" alt="">
-                    <img src="../media/Event/event6.jpg" alt="">
-                    <img src="../media/Event/event8.webp" alt="">
-                    <img src="../media/Event/event9.jpg" alt="">
-                    <img src="../media/Event/event10.jpg" alt="">
-                </div>
-                <div class="contact">
-                    <a href="../HTML/contact.html">CONTACT US</a>
-                </div>
+                                    <div style="display: none;" class="mediaEvent-event">
+                                        <h3>GALLERY</h3>
+                                        <div class="media-event">
+                                            <img src="../media/Event/event1.jpg" alt="">
+                                            <img src="../media/Event/event2.jpg" alt="">
+                                            <img src="../media/styling/q1.jpg" alt="">
+                                            <img src="../media/Event/event4.jpg" alt="">
+                                            <img src="../media/Event/event7.jpg" alt="">
+                                            <img src="../media/Event/event6.jpg" alt="">
+                                            <img src="../media/Event/event8.webp" alt="">
+                                            <img src="../media/Event/event9.jpg" alt="">
+                                            <img src="../media/Event/event10.jpg" alt="">
+                                        </div>
+                                        <div class="contact">
+                                            <button onclick="hideMediaenvent()" class="button">Less Information
+                                                <span class="material-symbols-outlined">
+                                                    keyboard_double_arrow_up
+                                                </span>
+                                            </button>
+                                            <a href="../HTML/contact.html">CONTACT US</a>
+                                        </div>
 
-            </div>
-            <hr>
+                                    </div>
+                                    <hr>
 
-            <div class=" body_content">
-                <div class=" service_banner">
-                    <img src="../media/servicebanner/style1.webp" alt="">
-                    <img src="../media/servicebanner/service1.webp" alt="">
-                    <img src="../media/servicebanner/style2.webp" alt="">
-                </div>
-                <div class="hover">
-                    <p>PLANT STYLING & SERVICE</p>
-                    <button>
-                        MORE GALLERY >>
-                    </button>
-                </div>
-            </div>
+                                    <div class=" body_content">
+                                        <div class=" service_banner">
+                                            <img src="../media/servicebanner/style1.webp" alt="">
+                                            <img src="../media/servicebanner/service1.webp" alt="">
+                                            <img src="../media/servicebanner/style2.webp" alt="">
+                                        </div>
+                                        <div class="hover">
+                                            <p id="s">PLANT STYLING & SERVICE</p>
+                                            <button onclick="getMediastyling(2)">
+                                                MORE GALLERY >>
+                                            </button>
+                                        </div>
+                                    </div>
 
-            <p class="content_text">
-                We are happy to undertake the complete indoor plant styling of restaurants, bars, offices and premium
-                private
-                residences: from selection of beautiful plants and curated pots, through plant care consulting, supply,
-                repotting and
-                full on-site styling.
-                <br>
-                Contact and requests: chuxin@haute.com
-            </p>
-            <div class="mediaEvent">
-                <h3>GALLERY</h3>
-                <div class="media-event">
-                    <img src="../media/styling/q1.jpg" alt="">
-                    <img src="../media/styling/q2.jpg" alt="">
-                    <img src="../media/styling/q3.jpg" alt="">
-                    <img src="../media/styling/q4.jpg" alt="">
-                    <img src="../media/styling/q5.jpg" alt="">
-                    <img src="../media/styling/q6.jpg" alt="">
-                    <img src="../media/styling/q7.jpg" alt="">
-                    <img src="../media/styling/q8.jpg" alt="">
-                    <img src="../media/styling/q9.jpg" alt="">
-                </div>
-                <div class="contact">
-                    <a href="../HTML/contact.html">CONTACT US</a>
-                </div>
-            </div>
-            <hr>
+                                    <p class="content_text">
+                                        We are happy to undertake the complete indoor plant styling of restaurants,
+                                        bars, offices and premium
+                                        private
+                                        residences: from selection of beautiful plants and curated pots, through plant
+                                        care consulting, supply,
+                                        repotting and
+                                        full on-site styling.
+                                        <br>
+                                        Contact and requests: chuxin@haute.com
+                                    </p>
+                                    <div style="display: none;" class="mediaEvent-styling">
+                                        <h3>GALLERY</h3>
+                                        <div class="media-event">
+                                            <img src="../media/styling/q1.jpg" alt="">
+                                            <img src="../media/styling/q2.jpg" alt="">
+                                            <img src="../media/styling/q3.jpg" alt="">
+                                            <img src="../media/styling/q4.jpg" alt="">
+                                            <img src="../media/styling/q5.jpg" alt="">
+                                            <img src="../media/styling/q6.jpg" alt="">
+                                            <img src="../media/styling/q7.jpg" alt="">
+                                            <img src="../media/styling/q8.jpg" alt="">
+                                            <img src="../media/styling/q9.jpg" alt="">
+                                        </div>
+                                        <div class="contact">
+                                            <button onclick="hideMediastyling()" class="button">Less Information
+                                                <span class="material-symbols-outlined">
+                                                    keyboard_double_arrow_up
+                                                </span>
+                                            </button>
+                                            <a href="../HTML/contact.html">CONTACT US</a>
+                                        </div>
+                                    </div>
+                                    <hr>
 
-            <div class=" body_content">
-                <div class=" service_banner">
-                    <img src="../media/servicebanner/servvivesenda.webp" alt="">
-                    <img src="../media/servicebanner/pl1.jpg" alt="">
-                    <img src="../media/servicebanner/pl2.jpg" alt="">
-                </div>
-                <div class="hover">
-                    <p>
-                        PLANT
-                    </p>
-                    <button>
-                        MORE INFORMATION >>
-                    </button>
+                                    <div class=" body_content">
+                                        <div class=" service_banner">
+                                            <img src="../media/servicebanner/servvivesenda.webp" alt="">
+                                            <img src="../media/servicebanner/pl1.jpg" alt="">
+                                            <img src="../media/servicebanner/pl2.jpg" alt="">
+                                        </div>
+                                        <div class="hover">
+                                            <p id="p">
+                                                PLANT
+                                            </p>
+                                            <button onclick="getMediaplant()">
+                                                MORE INFORMATION >>
+                                            </button>
 
-                </div>
-            </div>
-            <p class="content_text">Plants
-                Easy to care plants, rarities, fast and slow-growing plants, plants happy in bright light or semi-shade…
-                We are pleased to present our first ceramic pot family, EARTH by Plante! All pieces are handmade in
-                Hungary in three
-                different earthy colours and in three practical sizes.
-            </p>
-            <div class="mediaEvent">
-                <h3>GALLERY</h3>
-                <div class="media-event">
-                    <img src="../media/plantt/flower49.webp" alt="">
-                    <img src="../media/plantt/flower50.webp" alt="">
-                    <img src="../media/plantt/flower51.webp" alt="">
-                    <img src="../media/plantt/flower52.webp" alt="">
-                    <img src="../media/plantt/flower53.webp" alt="">
-                    <img src="../media/plantt/flower54.webp" alt="">
-                    <img src="../media/plantt/flower55.jpg" alt="">
-                    <img src="../media/plantt/flower56.jpg" alt="">
-                    <img src="../media/plantt/flower57.jpg" alt="">
-                </div>
-                <div class="contact">
-                    <a href="../HTML/contact.html">CONTACT US</a>
-                </div>
+                                        </div>
+                                    </div>
+                                    <p class="content_text">Plants
+                                        Easy to care plants, rarities, fast and slow-growing plants, plants happy in
+                                        bright light or semi-shade…
+                                        We are pleased to present our first ceramic pot family, EARTH by Plante! All
+                                        pieces are handmade in
+                                        Hungary in three
+                                        different earthy colours and in three practical sizes.
+                                    </p>
+                                    <div style="display: none;" class="mediaEvent-plant">
+                                        <h3>GALLERY</h3>
+                                        <div class="media-event">
+                                            <img src="../media/plantt/flower49.webp" alt="">
+                                            <img src="../media/plantt/flower50.webp" alt="">
+                                            <img src="../media/plantt/flower51.webp" alt="">
+                                            <img src="../media/plantt/flower52.webp" alt="">
+                                            <img src="../media/plantt/flower53.webp" alt="">
+                                            <img src="../media/plantt/flower54.webp" alt="">
+                                            <img src="../media/plantt/flower55.jpg" alt="">
+                                            <img src="../media/plantt/flower56.jpg" alt="">
+                                            <img src="../media/plantt/flower57.jpg" alt="">
+                                        </div>
+                                        <div class="contact">
+                                            <button onclick="hideMediaplant()" class="button">Less Information
+                                                <span class="material-symbols-outlined">
+                                                    keyboard_double_arrow_up
+                                                </span>
+                                            </button>
+                                            <a href="../HTML/contact.html">CONTACT US</a>
+                                        </div>
 
-            </div>
+                                    </div>
 
-        </div>
-    </main>
-    <script src="../JS/index.js"></script>
+                                </div>
+                                </main>
+                                <script src="../JS/index.js"></script>
+                                <script src="../JS/service.js"></script>
 </body>
 
 </html>
